@@ -110,7 +110,7 @@ def browse(request):
         results_var['results_total'] += 1
         
         # CREATE FILEOBJECT
-        fileobject = FileObject(os.path.join(fb_settings.DIRECTORY, path, file))
+        fileobject = FileObject(os.path.join(fb_settings.DIRECTORY, unicode(path), unicode(file)))
         
         # FILTER / SEARCH
         append = False
